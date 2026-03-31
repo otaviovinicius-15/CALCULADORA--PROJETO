@@ -1,0 +1,66 @@
+body{
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+    background: radial-gradient(circle at center, #c5bfbf, #807b7b, #515455);
+
+    /* Chama a animação 'gradient' que dura 15 segundos */
+    animation: gradient 15s ease infinite;
+    font-family: Arial, sans-serif; /* Uma fonte mais limpa */
+}
+
+.container{
+
+    background: rgba(255, 255, 255, 0.25);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 50px  rgba(0,0,0,0.5);
+    
+}
+
+.mostrar{
+    grid-column: span 4;
+}
+
+#aparecer{
+
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: right;
+    border-radius: 10px;
+    
+
+}
+
+.botaoC{
+
+    grid-column: span 4;
+
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ecf0f1;
+}
+
+button:hover {
+    background-color: #757575; 
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
