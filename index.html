@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    
+<div class="container">
+    <div class="mostrar"><input type="text" disabled id="aparecer"></div>    
+    <button onclick="aparecernodisplay('1')">1</button>
+    <button onclick="aparecernodisplay('2')">2</button>
+    <button onclick="aparecernodisplay('3')">3</button>
+    <button onclick="aparecernodisplay('-')">-</button>
+
+    <button onclick="aparecernodisplay('4')">4</button>
+    <button onclick="aparecernodisplay('5')">5</button>
+    <button onclick="aparecernodisplay('6')">6</button>
+    <button onclick="aparecernodisplay('+')">+</button>
+
+    <button onclick="aparecernodisplay('7')">7</button>
+    <button onclick="aparecernodisplay('8')">8</button>
+    <button onclick="aparecernodisplay('9')">9</button>
+    <button onclick="aparecernodisplay('/')">/</button>
+
+    <button onclick="aparecernodisplay('0')">0</button>
+    <button onclick="ApagarUmDisplay()">&gt</button>
+    <button onclick="calculo()">=</button>
+    <button onclick="aparecernodisplay('*')">*</button>
+    <button class="botaoC"onclick="ApagarTudoDisplay()">C</button>
+       
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
