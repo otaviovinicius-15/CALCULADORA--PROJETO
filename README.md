@@ -5,7 +5,7 @@ Este repositório contém o projeto de uma calculadora desenvolvido de forma col
 ## 👥 Integrantes do Grupo
 **Otávio** (Scrum Master / Integrador)
 **Caio** (Desenvolvedor de Multiplicação)
-**Carlos** (Desenvolvedor de Divisão/Subtração)
+**Carlos** (Desenvolvedor de soma / Raiz quadrada)
 
 ---
 
@@ -34,7 +34,7 @@ Este repositório contém o projeto de uma calculadora desenvolvido de forma col
 2.  Puxe a base atualizada da DEV: git pull origin DEV.
 3.  Desenvolva a lógica de subtração e divisão no script.js.
 4.  Suba as alterações:
-    - git add .
+    - git add.
     - git commit -m "feat: implementadas divisão e subtração"
     - git push origin subtração
 5.  **Peça para Otávio abrir o Pull Request (PR) para a DEV.**
