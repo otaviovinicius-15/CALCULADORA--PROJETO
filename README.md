@@ -49,3 +49,52 @@ Este repositório contém o projeto de uma calculadora desenvolvido de forma col
 
 ## 🚀 Como Rodar o Projeto
 Basta abrir o arquivo index.html em seu navegador ou utilizar a extensão Live Server do VS Code.
+
+---
+
+## 📦 Gerar Release Local
+
+Para gerar uma release local do projeto (ZIP com todos os arquivos necessários):
+
+### Opção 1: PowerShell (Recomendado)
+```powershell
+# Versão padrão (1.0.0)
+.\build-release.ps1
+
+# Ou especificar versão
+.\build-release.ps1 -Version "2.1.0"
+```
+
+### Opção 2: Batch Script
+```batch
+# Versão padrão
+build-release.bat
+
+# Ou especificar versão
+build-release.bat 2.1.0
+```
+
+### O que o script faz:
+- ✅ Cria pasta `releases/` no projeto
+- ✅ Copia `index.html`, `style.css` e todos os `.js`
+- ✅ Gera arquivo `VERSION.txt` com informações da versão
+- ✅ Cria `CHANGELOG.txt` com últimas mudanças (se usar Git)
+- ✅ Gera arquivo ZIP da release
+- ✅ Mostra informações sobre o arquivo gerado
+
+### Exemplo de uso:
+```
+🚀 Iniciando geração de release local v1.0.0
+📁 Criado diretório releases
+📋 Copiando arquivos...
+📝 Gerando changelog...
+📦 Criando arquivo ZIP...
+✅ Release gerada com sucesso!
+📂 Localização: releases\calculadora-v1.0.0.zip
+📊 Tamanho: 0.05 MB
+```
+
+### Para usar a release:
+1. Extraia o ZIP em qualquer pasta
+2. Abra `index.html` no navegador
+3. Ou use um servidor local: `python -m http.server 8000`
