@@ -1,18 +1,21 @@
 
 /* CARLOS: RAIZ */
 
+//Mostra os valores no display
 function aparecernodisplay(data){
     document.querySelector('#aparecer').value += data;
 }
 
+//Apaga tudo
+function ApagarTudoDisplay(data){
+    document.querySelector('#aparecer').value = ""
+}
+
+//Apaga somente um número
 function ApagarUmDisplay(){
     let display = document.getElementById('aparecer');
     display.value=display.value.slice(0,-1);
 
-}
-
-function ApagarTudoDisplay(data){
-    document.querySelector('#aparecer').value = ""
 }
 
 function raiz() {
