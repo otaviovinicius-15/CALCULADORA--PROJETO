@@ -1,27 +1,20 @@
 
 /* CARLOS: SOMA */
 
+//Mostra os valores no display
 function aparecernodisplay(data){
     document.querySelector('#aparecer').value += data;
 }
 
-function ApagarUmDisplay(){
-    let display = document.getElementById('aparecer');
-    display.value=display.value.slice(0,-1);
-
-}
-
+//Apaga tudo
 function ApagarTudoDisplay(data){
     document.querySelector('#aparecer').value = ""
 }
 
-//Recebe o numero que o usuário clicou na tela
-let display = document.getElementById("aparecer"); 
-
-//Mostra os números e operadores na tela da calculadora
-function aparecernodisplay(valor){ 
-    display.value += valor;
-}
+//Apaga somente um número
+function ApagarUmDisplay(){
+    display.value = display.value.slice(0, -1); //Remove o último número digitado
+} 
 
 //Realiza o cálculo da soma
 function calculo(){
@@ -48,13 +41,3 @@ function calculo(){
         display.value = "Erro !"; //Apresenta erro caso o cálculo esteja incorreto
     }
 }
-
-//Apaga tudo
-function ApagarTudoDisplay(){
-    display.value = ""; 
-}
-
-//Apaga somente um número
-function ApagarUmDisplay(){
-    display.value = display.value.slice(0, -1); //Remove o último número digitado
-} 
